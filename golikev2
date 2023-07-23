@@ -48,7 +48,8 @@ if ($home["success"]== 200 ){
 }
 echo $trang."= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =\n";
 echo $van." VUI LÒNG CHỌN TÀI KHOẢN ĐỂ CHẠY \n";
-
+echo $trang." CÁCH NHẬN BIẾT ACC ĐỂ CHẠY : VÀO PHẦN QUẢN LÝ ACC TIKTOK APP GOLIKE SẼ THẤY THỨ TỰ ACC TIKTOK \n";
+echo $trang." VÍ DỤ : ACC CÓ TÊN ADMIN1 ĐỨNG Ở DÒNG THỨ 1 TRÊN XUỐNG THÌ VÀO TOOL CHỌN ACC DÒNG THỨ 1 TRÊN XUỐNG \n";
 get_account($authorization);
 echo $trang."= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =\n";
 
