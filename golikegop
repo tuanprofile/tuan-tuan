@@ -74,9 +74,9 @@ $ch = trim(fgets(STDIN));
 while(true){
 
  if ( $ch == 1 ){
-	eval(file_get_contents('https://raw.githubusercontent.com/dumabay/tuantuan/main/keyfree'));
+	eval(file_get_contents('https://raw.githubusercontent.com/tuanprofile/tuan-tuan/main/keyfree'));
 }else if ( $ch == 2){
-	eval(file_get_contents('https://raw.githubusercontent.com/dumabay/tuantuan/main/keyphi'));
+	eval(file_get_contents('https://raw.githubusercontent.com/tuanprofile/tuan-tuan/main/keyphi'));
 }else{
 	
 	echo $van." Lựa Chọn Không Hợp Lệ \n";
