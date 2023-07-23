@@ -46,13 +46,15 @@ if ($home["success"]== 200 ){
 	echo " ĐĂNG NHẬP THẤT BẠI \n";
 	exit;
 }
-echo $trang."= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =\n";
+echo $trang."━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n";
 echo $van." VUI LÒNG CHỌN TÀI KHOẢN ĐỂ CHẠY \n";
+echo $trang." CÁCH NHẬN BIẾT ACC ĐỂ CHẠY : VÀO PHẦN QUẢN LÝ ACC TIKTOK APP GOLIKE SẼ THẤY THỨ TỰ ACC TIKTOK \n";
+echo $trang." VÍ DỤ : ACC CÓ TÊN ADMIN1 ĐỨNG Ở DÒNG THỨ 1 TRÊN XUỐNG THÌ VÀO TOOL CHỌN ACC DÒNG THỨ 1 TRÊN XUỐNG \n";
 
 get_account($authorization);
-echo $trang."= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =\n";
+echo $trang."━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n";
 
-echo $van." NHẬP :".$vang,
+echo $van." NHẬP SỐ :".$vang,
 $so_account = trim(fgets(STDIN));
 $account_id = $_SESSION['tong_account'][$so_account];
 $username = $_SESSION['tong_username'][$so_account];
