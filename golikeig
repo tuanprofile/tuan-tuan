@@ -24,6 +24,7 @@ echo "$van \033[1;97mTOOL : GOLIKE INSTAGRAM \n";
 echo "$van \033[1;97mVô Nhóm Xem Cập nhật Mới Nhất Nhé \n";
 echo "$van \033[1;97mhttps://zalo.me/g/ykntan866 \n";
 echo $trang."= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =\n";
+echo $van." CHẠY INSTAGRAM CÓ THỂ NHẢ FOLLOW DẪN TỚI BAND ACC CÂN NHẮC TRƯỚC KHI CHẠY ";
 echo $van." NHẬP AUTHORIZATION GOLIKE : ";
 $authorization = trim(fgets(STDIN));
 $url = "https://sv5.golike.net/api/users/me";
