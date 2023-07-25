@@ -153,8 +153,7 @@ echo $van.$luc." Nhập Số ".$do."[".$trang."2".$do."]".$luc." TOOL GOLIKE INS
 echo $van.$luc." Nhập Số ".$do."[".$trang."3".$do."]".$luc." TOOL SHARE ẢO PAGE".$do."[".$vang."VIP".$do."] \n";
 echo $van.$luc." Nhập Số ".$do."[".$trang."4".$do."]".$luc." TOOL TDS TIKTOK".$do."[".$vang."VIP".$do."] \n";
 echo $van.$luc." Nhập Số ".$do."[".$trang."5".$do."]".$luc." TOOL TDS INSTAGRAM ".$do."[".$vang."VIP".$do."] \n";
-echo $van.$luc." Nhập Số ".$do."[".$trang."6".$do."]".$luc." TOOL TTC TIKTOK ".$do."[".$vang."VIP".$do."] \n";
-echo $van.$luc." Nhập Số ".$do."[".$trang."7".$do."]".$luc." TOOL TDS PAGE PRO5 ".$do."[".$vang."VIP".$do."] \n";
+echo $van.$luc." Nhập Số ".$do."[".$trang."6".$do."]".$luc." TOOL TDS PAGE PRO5 ".$do."[".$vang."VIP".$do."] \n";
 
 echo $trang."━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n";
 
@@ -179,8 +178,6 @@ while(true){
 }else if ( $ch == 5){
 	eval(file_get_contents('https://raw.githubusercontent.com/tuanprofile/tuan-tuan/main/tdsig'));
 }else if ( $ch == 6){
-	eval(file_get_contents('https://raw.githubusercontent.com/tuanprofile/tuan-tuan/main/ttctt'));
-}else if ( $ch == 7){
 	eval(file_get_contents('https://raw.githubusercontent.com/tuanprofile/tuan-tuan/main/tdspr5'));
 }else{
 	
