@@ -127,8 +127,8 @@ $coin = $golike['data']['price_per_after_cost'];
 $loi_id = $golike['data']['object_id'];
 if($ty =="comment" or $ty == "like"){
 echo "Đã bỏ qua job $ty         \r";$data = '{"ads_id":'.$uid.',"object_id":"'.$loi_id.'","account_id":'.$id.',"type":"'.$ty.'"}';
-$tsm3 = array($b1,$a2,$a3,$a4,"content-length: ".strlen($data),$a5,"content-type: application/json;charset=UTF-8","accept: application/json, text/plain, */*","referer: https://app.golike.net/");
-$loi = post("https://sv4.golike.net/api/advertising/publishers/tiktok/skip-jobs",$tsm3,$data);
+$tsm4 = array($b1,$a2,$a3,$a4,"content-length: ".strlen($data),$a5,"content-type: application/json;charset=UTF-8","accept: application/json, text/plain, */*","referer: https://app.golike.net/");
+$loi = post("https://sv4.golike.net/api/advertising/publishers/tiktok/skip-jobs",$tsm4,$data);
 $p = $red."Báo Cáo lỗi Thành công           \r";
 cc($p);
 continue;}else{}
@@ -145,14 +145,26 @@ $nhan = json_decode($nhan,true);
 
 $se = $nhan['success'];
 
+for($time=$dl;$time>-1;$time--){
+echo $yellow."Vui lòng chờ $time để hoàn thành job \r";sleep(1);}
+$data = '{"ads_id":'.$uid.',"account_id":'.$id.',"async":true,"data":null}';
+$tsm3 = array($b1,$a2,$a3,$a4,"content-length: ".strlen($data),$a5,"content-type: application/json;charset=UTF-8","accept: application/json, text/plain, */*","referer: https://app.golike.net/",);
+
+$nhan2 = post("https://sv4.golike.net/api/advertising/publishers/tiktok/complete-jobs",$tsm3,$data);
+
+$nhan2 = json_decode($nhan2,true);
+
+$se = $nhan2['success'];
+
+
 
 if($se == "1"){
 date_default_timezone_set('Asia/Ho_Chi_Minh');
 $ngay=date("H:i");$noe++;
 $uu=$nau."$noe ".$green." |$ngay| ".$trang." |$yellow$ty| ".$trang."|$nau$uid".$trang."|".$yellow." ".$red."SUCCESS ".$green."| +$coin |  \n";cc($uu);}else{
 $data = '{"ads_id":'.$uid.',"object_id":"'.$loi_id.'","account_id":'.$id.',"type":"'.$ty.'"}';
-$tsm3 = array($b1,$a2,$a3,$a4,"content-length: ".strlen($data),$a5,"content-type: application/json;charset=UTF-8","accept: application/json, text/plain, */*","referer: https://app.golike.net/");
-$loi = post("https://sv4.golike.net/api/advertising/publishers/tiktok/skip-jobs",$tsm3,$data);
+$tsm4 = array($b1,$a2,$a3,$a4,"content-length: ".strlen($data),$a5,"content-type: application/json;charset=UTF-8","accept: application/json, text/plain, */*","referer: https://app.golike.net/");
+$loi = post("https://sv4.golike.net/api/advertising/publishers/tiktok/skip-jobs",$tsm4,$data);
 $p = $red."Báo Cáo lỗi Thành công           \r";
 cc($p);
 }
